@@ -1,0 +1,99 @@
+
+h1 {
+    margin:0;
+}
+
+.stonename {
+  font-size:30px;
+}
+
+.container {
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:hidden;
+}
+
+.main-nav {
+    padding:13px;
+    box-sizing:border-box;
+    font-size:1.5em;
+}
+
+.banner {
+    width: auto;
+    background:url(img/mussels.jpg) no-repeat;
+    height:500px;
+    background-size:cover;
+    background-position:center center;
+    /*x and y for centers above*/
+    background-attachment: fixed;
+    font-size: 20px;
+}
+
+.banner h1 {
+    color:#FFF;
+    text-align:center;
+    padding-top:175px;
+    font-size:4em;
+}
+
+.banner h2 {
+    color:#FFF;
+    text-align:center;
+    padding-top:10px;
+    font-size:3em;
+}
+
+.globe {
+      text-align:center;
+      padding-top: 10px;
+      font-size: 3em;
+      font-style: italic;
+}
+
+.hours {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.callout {
+  color: red;
+}
+
+.about_us {
+  text-align: center;
+}
+
+.aboutbike {
+  max-width: 800px;
+  height: 400px;
+  margin: auto;
+  display: block;
+}
+
+.mycontent-right {
+  border-right: 1px solid;
+  border-color: #E3E3E3;
+}
+
+.mycontent-left {
+  border-left: 1px solid;
+  border-color: #E3E3E3;
+}
+
+.teamwork {
+  max-width: 500px;
+  height: 400px;
+  top: 0%;
+  display: block;
+  margin: auto;
+}
+
+#slide-submenu{
+  background: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About StoneBridge</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+    <style>
+          #map {
+            width: 100%;
+            height: 400px;
+            background-color: grey;
+          }
+        </style>
+  </head>
+
+  <body>
+    <div class="container small container main-nav">
+      <div class="row">
+        <div class="col-sm-6">
+      <h3 class="text-muted stonename">StoneBridge Bar and Grill</h3>
+        </div>
+        <div class="col-sm-6 linksize">
+          <ul class="nav nav-pills pull-right margin-top-20 main-nav na">
+            <li role="presentation"><a href="index.html">Home</a></li>
+            <li role="presentation"><a href="About.html">About</a></li>
+            <li role="presentation"><a href="Menu.html">Menu</a></li>
+            <li role="presentation"><a href="Events.html">Events</a></li>
+            <li role="presentation" class="active"><a href="Directions.html">Directions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+      <h3>Meet at the StoneBridge</h3>
+      <h4>5 East Blvd, Onset, MA 02558</h4><span><h4>Nestled in Onset Village, just a short walk from Onset Center, our restaurant is easily accessible by land or by sea!</h4>
+        <h4>Please note: East Blvd is a small seaside street that is not always picked up on GPS. If in doubt, please use 155 Onset Ave as we are on the corner of Onset Ave and East Blvd.</h4>
+
+       <div id="map"></div>
+       <script>
+         function initMap() {
+           var uluru = {lat: 41.7425676, lng: -70.6545381};
+           var map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 15,
+             center: uluru
+           });
+           var marker = new google.maps.Marker({
+             position: uluru,
+             map: map
+           });
+         }
+       </script>
+       <script async defer
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRRkrAhYT1CZY_hqIMZkC28iUeUH5B_nI&callback=initMap">
+       </script>
+
+      <h4><i class="fa fa-ship" aria-hidden="true"></i> If by sea:</h4>
+      <h4> Head into Onset Harbor toward the town dock.  Then around #16 and go under bridge. The restaurant and marina will be just after StoneBridge on your left.  Yellow cones mark available slips for restaurant patrons. It's just $5 to tie up!</h4>
+
+      <h4><i class="fa fa-car" aria-hidden="true"></i> If by land:</h4>
+      <h4><strong>From Points North:</strong> RT-495 South becomes Rt 25 East. Take exit 2 toward US-6 / Onset / RT-28 / Wareham. Go .4 miles and turn right onto Depot St. Then slight left onto Onset Ave. Go 1.7 miles towards the charming village of Onset.  Go through town and we are on the left just before the bridge.</h4>
+
+      <h4><strong>From Points West:</strong> Rt-195 East merge onto RT-25 East via exit 22A toward Cape Cod.  Take exit 2 toward US-6 / Onset / RT-28 / Wareham. Go .4 miles and turn right onto Depot St. Then slight left onto Onset Ave. Go 1.7 miles towards the charming village of Onset.  Go through town and and we are on left just before bridge.</h4>
+
+      <h4><strong>From Cape Cod:</strong> Get on RT-6 West/RT-28 North.  Pass through Buttermilk Bay roundabout and take left at lights onto Onset Ave.  Go 1.6 miles and we are on the right just after bridge.</h4>
+  </body>
+</html>
